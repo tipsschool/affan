@@ -1,5 +1,11 @@
+cd path/to/your/project
+git commit -m "Add HTML and PHP file
+cd path/to/school-website
+git init
 git add .
 git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/tipsschool/affan.git
 git push -u origin main
 <?php
 session_start();
