@@ -1,3 +1,6 @@
+school-website/images/logo.jpeg
+<!-- Logo -->
+<img src="images/logo.jpeg" alt="TIPS School System Logo" style="width:150px;height:auto;">
 cd path/to/school-website
 git init
 git add .
