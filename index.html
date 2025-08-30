@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TIPSSchool</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General */
+body { font-family:'Roboto', sans-serif; margin:0; padding:0; scroll-behavior: smooth; background:#f0f2f5; }
+header { background: linear-gradient(135deg,#87CEEB,#FFD700,#FF4C4C); color:white; padding:60px 20px; text-align:center; border-bottom-left-radius:30px; border-bottom-right-radius:30px; }
+header img { height:100px; }
+header h1 { font-size:3em; margin:10px 0; }
+header p { font-size:1.2em; }
+
+/* Navigation */
+nav { display:flex; justify-content:center; background:#FF4C4C; padding:15px 0; flex-wrap:wrap; position:sticky; top:0; z-index:100; }
+nav a { color:white; margin:0 15px; text-decoration:none; font-weight:500; padding:8px 12px; border-radius:5px; transition:0.3s; }
+nav a.active, nav a:hover { background:rgba(255,255,255,0.3); }
+
+/* Sections */
+section { padding:60px 20px; display:flex; flex-direction:column; align-items:center; }
+.card { background:white; padding:30px; margin:20px 0; width:80%; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); text-align:center; transition:0.3s; }
+.card:hover { transform: translateY(-5px); }
+
+/* Buttons */
+button { padding:12px 25px; border:none; border-radius:8px; background: linear-gradient(45deg,#FF4C4C,#FFD700,#87CEEB); color:white; font-weight:bold; cursor:pointer; transition:0.4s; }
+button:hover { background: linear-gradient(45deg,#87CEEB,#FFD700,#FF4C4C); transform: scale(1.05); }
+
+/* Gallery */
+.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.gallery img { width:100%; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; cursor:pointer; }
+.gallery img:hover { transform: scale(1.05); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+
+/* Footer */
+footer { background:#87CEEB; color:white; text-align:center; padding:25px; margin-top:40px; }
+
+/* Table responsive */
+table { width:90%; border-collapse:collapse; margin:0 auto; }
+th,td { padding:10px; border:1px solid #ddd; text-align:center; }
+@media(max-width:768px){ .card, table { width:95%; } nav a { margin:5px; } }
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/150x100?text=Logo" alt="TIPSSchool Logo">
+    <h1>TIPSSchool</h1>
+    <p>Contact: +92 3414700129 | Email: tipsschool4757@gmail.com</p>
+</header>
+
+<nav id="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#class">Class</a>
+    <a href="#results">Results</a>
+    <a href="#knowledge">Knowledge</a>
+    <a href="#admin">Admin</a>
+</nav>
+
+<section id="home">
+    <div class="card">
+        <h2>Welcome to TIPSSchool</h2>
+        <p>Success comes to those who never give up. Education is the key to a bright future. Stay focused, work hard, and achieve greatness!</p>
+        <button>Learn More</button>
+    </div>
+</section>
+
+<section id="about">
+    <div class="card">
+        <h2>About TIPSSchool</h2>
+        <p>TIPSSchool provides high-quality education that empowers students. Our experienced teachers guide every student with care and motivation.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="card">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Class+1" alt="Class 1">
+            <img src="https://via.placeholder.com/300x200?text=Class+2" alt="Class 2">
+            <img src="https://via.placeholder.com/300x200?text=Playground" alt="Playground">
+        </div>
+    </div>
+</section>
+
+<section id="admissions">
+    <div class="card">
+        <h2>Admissions</h2>
+        <p>Join TIPSSchool and be part of a successful learning environment. Fill out the admission form and submit the required documents at the school office.</p>
+    </div>
+</section>
+
+<section id="class">
+    <div class="card">
+        <h2>Classes</h2>
+        <ul>
+            <li>Class 1 – Basics</li>
+            <li>Class 2 – Intermediate</li>
+            <li>Class 3 – Advanced</li>
+            <li>Class 4 – Expert</li>
+            <li>Class 5 – Mastery</li>
+        </ul>
+    </div>
+</section>
+
+<section id="results">
+    <div class="card">
+        <h2>Results</h2>
+        <table>
+            <tr><th>Name</th><th>Class</th><th>Math</th><th>Science</th><th>English</th></tr>
+            <tr><td>Ali</td><td>5</td><td>95</td><td>90</td><td>92</td></tr>
+            <tr><td>Sara</td><td>5</td><td>88</td><td>85</td><td>90</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="knowledge">
+    <div class="card">
+        <h2>Knowledge & Best Practices</h2>
+        <ul>
+            <li>Always stay curious and ask questions.</li>
+            <li>Practice regularly to master your subjects.</li>
+            <li>Organize your study time efficiently.</li>
+            <li>Read books beyond textbooks to enhance knowledge.</li>
+            <li>Maintain discipline and consistency in learning.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="admin">
+    <div class="card">
+        <h2>Admin Upload Section (Demo)</h2>
+        <form>
+            <input type="file" accept="image/*">
+            <input type="file" accept="video/*">
+            <button type="button" onclick="alert('Demo: Upload manually in images folder')">Upload</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 TIPSSchool | All Rights Reserved</p>
+</footer>
+
+<script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+
+window.addEventListener('scroll', ()=> {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 60;
+        if (pageYOffset >= sectionTop) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => { link.classList.remove('active'); if(link.getAttribute('href') === '#' + current) link.classList.add('active'); });
+});
+</script>
+
+</body>
+</html>
